@@ -17,16 +17,8 @@ export default hopeTheme({
   plugins: {
     blog: true,
     mdEnhance: {
-      align: true,
-      codetabs: true,
-      figure: true,
-      imgLazyload: true,
-      imgSize: true,
+      include: true,
       katex: true,
-      sub: true,
-      sup: true,
-      tabs: true,
-      footnote: true,
     },
     copyCode: {},
     photoSwipe: {},
