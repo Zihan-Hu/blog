@@ -22,6 +22,13 @@ export default hopeTheme({
     },
     copyCode: {},
     photoSwipe: {},
+    comment: {
+      provider: 'Giscus',
+      repo: 'ZihanHu/blog',
+      repoId: 'R_kgDOJtj28Q',
+      category: '博客评论',
+      categoryId: 'DIC_kwDOJtj28c4CYG9j',
+    },
   },
   pageInfo: ['Date', 'Category', 'Tag'],
   copyright: 'Under CC-BY-SA-4.0 | Copyright © 2023 Zihan Hu',
