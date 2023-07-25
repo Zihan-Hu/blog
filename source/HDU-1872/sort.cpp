@@ -13,8 +13,6 @@ struct Student {
 } p[N];
 
 int main() {
-  freopen("std.in", "r", stdin);
-  freopen("std.out", "w", stdout);
   int n;
   while (cin >> n) {
     bool right = true, stable = true;
