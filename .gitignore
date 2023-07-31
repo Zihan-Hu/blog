@@ -1,6 +1,14 @@
 node_modules
+build
 .vscode
 
 blog/.vuepress/.cache
 blog/.vuepress/.temp
 blog/.vuepress/dist
+blog/images
+
+source/_demo
+source/**/*.exe
+source/**/std.in
+source/**/std.out
+source/**/std.err
