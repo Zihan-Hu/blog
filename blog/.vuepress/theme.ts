@@ -29,6 +29,11 @@ export default hopeTheme({
       category: '博客评论',
       categoryId: 'DIC_kwDOJtj28c4CYG9j',
     },
+    components: {
+      components: [
+        'BiliBili',
+      ],
+    },
   },
   pageInfo: ['Date', 'Category', 'Tag'],
   copyright: 'Under CC-BY-SA-4.0 | Copyright © 2023 Zihan Hu',
