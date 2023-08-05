@@ -3,6 +3,7 @@ import navbar from './navbar.js';
 
 export default hopeTheme({
   hostname: 'https://github.io/zihanhu/blog',
+  favicon: 'https://github.io/zihanhu/blog/favicon.ico',
   navbar,
   sidebar: false,
   editLink: false,
