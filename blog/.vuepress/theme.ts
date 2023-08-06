@@ -9,7 +9,7 @@ export default hopeTheme({
   editLink: false,
   blog: {
     name: '胡梓晗',
-    description: '全栈业余编程爱好者',
+    description: '全栈业余编程爱好者（实为 OIer）',
     medias: {
       Email: 'mailto:zihan-hu@foxmail.com',
       GitHub: 'https://github.com/ZihanHu',
