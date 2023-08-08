@@ -4,6 +4,9 @@ devDependencies:
   '@vuepress/client':
     specifier: 2.0.0-beta.63
     version: 2.0.0-beta.63
+  '@vuepress/plugin-register-components':
+    specifier: 2.0.0-beta.63
+    version: 2.0.0-beta.63
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -2211,6 +2214,16 @@ packages:
       - supports-color
     dev: true
 
+  /@vuepress/plugin-register-components@2.0.0-beta.63:
+    resolution: {integrity: sha512-u8PiRwnKa5sCJwEugcccP9053Ub+jv7vox7QU1kPPLXwOAmY1ycbknbHRk/LS9szFD0fYEitGqrf7JJcZwrz+w==}
+    dependencies:
+      '@vuepress/core': 2.0.0-beta.63
+      '@vuepress/utils': 2.0.0-beta.63
+      chokidar: 3.5.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@vuepress/plugin-theme-data@2.0.0-beta.63:
     resolution: {integrity: sha512-JLNxa6YTa3WK45j/9sZQsBJGr7aASqQb0dt3CvIitUVHk1n0cpc14nUANbj+3VAQUx6C5qkYcpA9EdDNAUf14Q==}
     dependencies:
@@ -2271,7 +2284,7 @@ packages:
       '@vuepress/shared': 2.0.0-beta.63
       debug: 4.3.4
       fs-extra: 11.1.1
-      globby: 13.1.4
+      globby: 13.2.2
       hash-sum: 2.0.0
       ora: 6.3.1
       picocolors: 1.0.0
@@ -3433,8 +3446,8 @@ packages:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
 
-  /fast-glob@3.2.12:
-    resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
+  /fast-glob@3.3.1:
+    resolution: {integrity: sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==}
     engines: {node: '>=8.6.0'}
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -3618,12 +3631,12 @@ packages:
       define-properties: 1.2.0
     dev: true
 
-  /globby@13.1.4:
-    resolution: {integrity: sha512-iui/IiiW+QrJ1X1hKH5qwlMQyv34wJAYwH1vrf8b9kBA4sNiif3gKsMHa+BrdnOpEudWjpotfa7LrTzB1ERS/g==}
+  /globby@13.2.2:
+    resolution: {integrity: sha512-Y1zNGV+pzQdh7H39l9zgB4PJqjRNqydvdYCDG4HFXM4XuvSaQQlEc91IU1yALL8gUTDomgBAfz3XJdmUS+oo0w==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       dir-glob: 3.0.1
-      fast-glob: 3.2.12
+      fast-glob: 3.3.1
       ignore: 5.2.4
       merge2: 1.4.1
       slash: 4.0.0
