@@ -18,6 +18,7 @@ export default hopeTheme({
   plugins: {
     blog: true,
     mdEnhance: {
+      align: true,
       include: true,
       katex: true,
     },
