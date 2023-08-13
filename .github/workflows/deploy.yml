@@ -47,3 +47,4 @@ jobs:
           path: blog/.vuepress/dist
       - name: 发布线上
         uses: actions/deploy-pages@v1
+        id: deployment
