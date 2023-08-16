@@ -1,7 +1,7 @@
 import { hopeTheme } from 'vuepress-theme-hope';
 import navbar from './navbar.js';
 
-const DIARY_PATH = /article\/\d{4}-\d{2}-\d{2}\.md/g;
+const DIARY_PATH = /^article\/\d{4}-\d{2}-\d{2}\.md$/;
 
 export default hopeTheme({
   hostname: 'https://github.io/zihanhu/blog',
