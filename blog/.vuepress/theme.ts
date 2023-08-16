@@ -1,6 +1,8 @@
 import { hopeTheme } from 'vuepress-theme-hope';
 import navbar from './navbar.js';
 
+const DIARY_PATH = /article\/\d{4}-\d{2}-\d{2}\.md/g;
+
 export default hopeTheme({
   hostname: 'https://github.io/zihanhu/blog',
   favicon: 'https://github.io/zihanhu/blog/favicon.ico',
@@ -16,14 +18,21 @@ export default hopeTheme({
     },
   },
   plugins: {
-    blog: true,
+    blog: {
+      filter: (page) => {
+        const path = page.filePathRelative;
+        return (
+          !!path?.startsWith('article')
+          && !page.frontmatter.home
+          && !DIARY_PATH.test(path)
+        );
+      },
+    },
     mdEnhance: {
       align: true,
       include: true,
       katex: true,
     },
-    copyCode: {},
-    photoSwipe: {},
     comment: {
       provider: 'Giscus',
       repo: 'ZihanHu/blog',
