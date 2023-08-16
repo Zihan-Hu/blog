@@ -7,6 +7,9 @@ export default defineUserConfig({
   base: '/blog/',
   lang: 'zh-CN',
   title: '胡梓晗的博客',
+  head: [
+    ['meta', { name: 'referer', content: 'never' }],
+  ],
   theme,
   plugins: [
     registerComponentsPlugin({

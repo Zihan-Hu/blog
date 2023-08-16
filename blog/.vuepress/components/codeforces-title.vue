@@ -38,7 +38,7 @@ const tip = computed(() => {
 
 <template>
   <span :class='["title", title]' :title='tip'>
-    <a href='https://codeforces.com/' target='_blank' />
+    <a href='https://codeforces.com/' target='_blank'></a>
     {{ shownTitle }}
   </span>
 </template>
