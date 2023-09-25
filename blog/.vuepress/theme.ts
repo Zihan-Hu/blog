@@ -4,8 +4,8 @@ import navbar from './navbar.js';
 const DIARY_PATH = /^article\/\d{4}-\d{2}-\d{2}\.md$/;
 
 export default hopeTheme({
-  hostname: 'https://github.io/zihanhu/blog',
-  favicon: 'https://github.io/zihanhu/blog/favicon.ico',
+  hostname: 'https://github.io/Zihan-Hu/blog',
+  favicon: 'https://zihan-hu.github.io/blog/favicon.ico',
   navbar,
   sidebar: false,
   editLink: false,
@@ -13,8 +13,8 @@ export default hopeTheme({
     name: '胡梓晗',
     description: '全栈业余编程爱好者（实为 OIer）',
     medias: {
-      Email: 'mailto:zihan-hu@foxmail.com',
-      GitHub: 'https://github.com/ZihanHu',
+      Email: 'mailto:hu-zihan@foxmail.com',
+      GitHub: 'https://github.com/Zihan-Hu',
     },
   },
   plugins: {
@@ -35,10 +35,10 @@ export default hopeTheme({
     },
     comment: {
       provider: 'Giscus',
-      repo: 'ZihanHu/blog',
-      repoId: 'R_kgDOJtj28Q',
-      category: '博客评论',
-      categoryId: 'DIC_kwDOJtj28c4CYG9j',
+      repo: 'Zihan-Hu/blog',
+      repoId: 'R_kgDOKYKFkw',
+      category: '文章评论',
+      categoryId: 'DIC_kwDOKYKFk84CZm_U',
     },
     components: {
       components: [
