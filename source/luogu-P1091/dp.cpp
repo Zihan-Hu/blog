@@ -1,11 +1,12 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 
 const int N = 105, T = 240;
 int f1[N], f2[N], t[N], n;
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   cin >> n;
   for (int i = 1; i <= n; ++i) cin >> t[i];
   // 从左往右查找 LIS
@@ -22,7 +23,7 @@ int main() {
     }
     ++f2[i];
   }
-  int ans = INT32_MAX;
+  int ans = INT_MAX;
   // 计算答案时要加上中间的
   for (int i = 1; i <= n; ++i) ans = min(ans, n - f1[i] - f2[i] + 1);
   cout << ans;

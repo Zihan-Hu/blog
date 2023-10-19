@@ -13,7 +13,7 @@ vector<int> used[N * N]; // 依赖 i 的边
 priority_queue<int, vector<int>, greater<int>> q; // 当前可取的积木
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   int n, m;
   cin >> n >> m;
   int t = INT_MIN;

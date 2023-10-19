@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 #include <string>
 using namespace std;
 
@@ -14,14 +15,14 @@ inline bool needRound(char c) {
  * @param last 上一次四舍五入的下标
  */
 int findRound(const string& s, int last) {
-  int ans = INT32_MAX;
+  int ans = INT_MAX;
   for (int i = 0; i < last; ++i) {
     if (needRound(s[i])) {
       ans = i;
       break;
     }
   }
-  if (ans != INT32_MAX && s[ans - 1] == '4') { // 可以继续进位
+  if (ans != INT_MAX && s[ans - 1] == '4') { // 可以继续进位
     for (int i = ans; i >= 0; ++i) {
       if (s[ans - 1] == '4') --ans;
       else break;
@@ -31,7 +32,7 @@ int findRound(const string& s, int last) {
 }
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   int t;
   cin >> t;
   string s;
@@ -39,7 +40,7 @@ int main() {
   while (t--) {
     cin >> s;
     int w = findRound(s, s.size());
-    while (w != INT32_MAX && w != 0) { // 直到不能操作或在最高位操作
+    while (w != INT_MAX && w != 0) { // 直到不能操作或在最高位操作
       ++s[w - 1];
       for (int i = w; i < s.size(); ++i) s[i] = '0';
       w = findRound(s, w);
@@ -50,7 +51,7 @@ int main() {
     } else {
       cout << s;
     }
-    cout << endl;
+    cout << '\n';
   }
   return 0;
 }

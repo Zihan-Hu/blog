@@ -16,7 +16,7 @@ int calc(int x, int y) {
 }
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   int n, m, t;
   cin >> n >> m >> t;
   int x, y;

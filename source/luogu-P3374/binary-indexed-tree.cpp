@@ -74,7 +74,7 @@ int main() {
         a[x] += y;
         break;
       case 2:
-        cout << query(x, y) << endl;
+        cout << query(x, y) << '\n';
         break;
     }
   }

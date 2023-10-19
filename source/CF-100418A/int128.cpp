@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   __int128 a = scan(), b = scan();
   print(a + b);
   return 0;

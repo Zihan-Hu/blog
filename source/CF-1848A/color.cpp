@@ -25,7 +25,7 @@ int main() {
       if (lose) continue; // 读完本组数据，不影响其他组
       if (toColor(ux, uy) == c) lose = true; // 同色必败
     }
-    cout << (lose ? "NO" : "YES") << endl;
+    cout << (lose ? "NO" : "YES") << '\n';
   }
   return 0;
 }

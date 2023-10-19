@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   for (int i = 1; i <= 8; ++i) {
     int n;
     cin >> n;

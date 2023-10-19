@@ -6,7 +6,7 @@ const int N = 305;
 int f[N][N], sum[N], n;
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   memset(f, 0x3f, sizeof(f));
   cin >> n;
   for (int i = 1; i <= n; ++i) {

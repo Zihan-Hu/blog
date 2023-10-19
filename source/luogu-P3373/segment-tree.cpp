@@ -112,7 +112,7 @@ int main() {
         update(x, y, 1, k);
         break;
       case 3:
-        cout << query(x, y) << endl;
+        cout << query(x, y) << '\n';
         break;
     }
   }

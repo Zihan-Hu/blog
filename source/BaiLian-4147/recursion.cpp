@@ -10,11 +10,11 @@ using namespace std;
  */
 void move(int block, char source, char middle, char target) {
   if (block == 1) { // 最小，直接移
-    cout << "1:" << source << "->" << target << endl;
+    cout << "1:" << source << "->" << target << '\n';
     return;
   }
   move(block - 1, source, target, middle);
-  cout << block << ':' << source << "->" << target << endl;
+  cout << block << ':' << source << "->" << target << '\n';
   move(block - 1, middle, source, target);
 }
 

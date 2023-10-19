@@ -15,7 +15,7 @@ inline void minify() {
 }
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   cin >> a[1] >> a[2] >> a[3];
   minify();
   sort();

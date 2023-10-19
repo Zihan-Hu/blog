@@ -31,12 +31,12 @@ int main() {
       }
     }
     if (right && stable) {
-      cout << "Right" << endl;
+      cout << "Right\n";
     } else {
-      cout << (right ? "Not Stable" : "Error") << endl;
+      cout << (right ? "Not Stable" : "Error") << '\n';
       // 输出正确结果
       for (int i = 1; i <= n; ++i) {
-        cout << p[i].name << ' ' << p[i].score << endl;
+        cout << p[i].name << ' ' << p[i].score << '\n';
       }
     }
   }

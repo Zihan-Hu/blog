@@ -33,6 +33,6 @@ int main() {
   for (int i = 1; i + r - 1 <= w; ++i) for (int j = 1; j + r - 1 <= h; ++j) {
     ans = max(ans, getAreaSum(i, j, i + r - 1, j + r - 1));
   }
-  cout << ans << endl;
+  cout << ans << '\n';
   return 0;
 }

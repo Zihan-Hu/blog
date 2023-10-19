@@ -6,7 +6,7 @@ int n, m;
 bool thin[N];
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   cin >> n >> m;
   for (int i = 1; i <= m; ++i) {
     int a, b;

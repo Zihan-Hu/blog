@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   int t;
   cin >> t;
   while (t--) {
@@ -11,7 +11,7 @@ int main() {
       cin >> u;
       sum += u;
     }
-    cout << ((sum % 2 == 0) ? "YES" : "NO") << endl;
+    cout << ((sum % 2 == 0) ? "YES" : "NO") << '\n';
   }
   return 0;
 }

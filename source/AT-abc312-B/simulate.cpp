@@ -22,12 +22,12 @@ bool check(int x, int y) {
 }
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   int n, m;
   cin >> n >> m;
   for (int i = 1; i <= n; ++i) for (int j = 1; j <= m; ++j) cin >> code[i][j];
   for (int i = 1; i <= n - 8; ++i) for (int j = 1; j <= m - 8; ++j) {
-    if (check(i, j)) cout << i << ' ' << j << endl;
+    if (check(i, j)) cout << i << ' ' << j << '\n';
   }
   return 0;
 }

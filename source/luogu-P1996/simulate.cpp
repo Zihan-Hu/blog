@@ -5,7 +5,7 @@ using namespace std;
 list<int> game;
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   int n, m;
   cin >> n >> m;
   for (int i = 1; i <= n; ++i) game.push_back(i);

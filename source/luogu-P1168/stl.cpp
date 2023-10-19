@@ -6,7 +6,7 @@ using namespace std;
 vector<int> v;
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   int n;
   cin >> n;
   for (int i = 1; i <= n; ++i) {
@@ -14,7 +14,7 @@ int main() {
     cin >> u;
     v.insert(upper_bound(v.begin(), v.end(), u), u);
     if (i % 2 == 1) {
-      cout << v[i >> 1] << endl;
+      cout << v[i >> 1] << '\n';
     }
   }
   return 0;

@@ -9,7 +9,7 @@ inline bool valid(LL x, LL y) {
 }
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   int t;
   cin >> t;
   while (t--) {
@@ -23,7 +23,7 @@ int main() {
         break;
       }
     }
-    cout << ok << endl;
+    cout << ok << '\n';
   }
   return 0;
 }

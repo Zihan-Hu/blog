@@ -53,7 +53,7 @@ int main() {
   cin >> t;
   while (t--) {
     cin >> s;
-    cout << transform(s) << endl;
+    cout << transform(s) << '\n';
   }
   return 0;
 }

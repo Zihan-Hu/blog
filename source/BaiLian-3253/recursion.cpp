@@ -20,12 +20,12 @@ int main() {
   while (cin >> n) {
     ans = 0;
     if (n == 0) {
-      cout << 1 << endl;
+      cout << '1\n';
       continue;
     }
     // n 个元素划分为成 resolve(n,m) 个集合
     for (int i = 1; i <= n; ++i) ans += resolve(n, i);
-    cout << ans << endl;
+    cout << ans << '\n';
   }
   return 0;
 }

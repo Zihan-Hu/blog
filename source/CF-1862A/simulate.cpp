@@ -6,7 +6,7 @@ const char like[] = "vika";
 char s[N][N];
 
 int main() {
-  cin.sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(nullptr);
   int t;
   cin >> t;
   while (t--) {
@@ -27,7 +27,7 @@ int main() {
         break;
       }
     }
-    cout << (yes ? "YES" : "NO") << endl;
+    cout << (yes ? "YES" : "NO") << '\n';
   }
   return 0;
 }

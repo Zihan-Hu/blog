@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 #include <queue>
 using namespace std;
 
@@ -13,7 +14,7 @@ struct Point {
 const int N = 20;
 int dx[] = {1, 0, -1, 0}, dy[] = {0, 1, 0, -1};
 bool blocked[N][N], vis[N][N];
-int n, m, ans = INT32_MAX;
+int n, m, ans = INT_MAX;
 queue<Point> q;
 
 inline bool valid(Point p) {
@@ -57,6 +58,6 @@ int main() {
     }
   }
   dfs(start, 0);
-  cout << ((ans == INT32_MAX) ? -1 : ans); // @attention 这里必须加括号，否则会 WA
+  cout << ((ans == INT_MAX) ? -1 : ans); // @attention 这里必须加括号，否则会 WA
   return 0;
 }
