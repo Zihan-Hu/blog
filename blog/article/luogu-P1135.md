@@ -7,13 +7,13 @@ tag:
 excerpt: 是最短路问题的变体，使用 BFS 解决。
 ---
 
-# 计蒜客 T1959 题解
+# 洛谷 P1135 题解
 
 ## 题面
 
 ::: details 点击此处展开题面
 
-<!-- @include: ../../source/JSK-T1859/problem.md -->
+<!-- @include: ../../source/luogu-P1135/problem.md -->
 
 :::
 
@@ -34,4 +34,4 @@ excerpt: 是最短路问题的变体，使用 BFS 解决。
 
 ## 代码
 
-@[code cpp](../../source/JSK-T1859/bfs.cpp)
+@[code cpp](../../source/luogu-P1135/bfs.cpp)
