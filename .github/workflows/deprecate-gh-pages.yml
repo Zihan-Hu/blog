@@ -1,0 +1,21 @@
+on: workflow_dispatch
+
+jobs:
+  deprecate:
+    name: 废弃 GitHub Pages
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: 准备 Git 环境
+        uses: actions/checkout@v3
+      - name: 设置环境
+        uses: actions/configure-pages@v2
+      - name: 上传物料
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: blog/.gh-pages
+      - name: 发布线上
+        uses: actions/deploy-pages@v1
