@@ -4,8 +4,8 @@ import navbar from './navbar.js';
 const DIARY_PATH = /^article\/\d{4}-\d{2}-\d{2}\.md$/;
 
 export default hopeTheme({
-  hostname: 'https://github.io/Zihan-Hu/blog',
-  favicon: 'https://zihan-hu.github.io/blog/favicon.ico',
+  hostname: 'https://zihan-hu.netlify.app/',
+  favicon: '/favicon.ico',
   iconAssets: 'iconfont',
   navbar,
   sidebar: false,
