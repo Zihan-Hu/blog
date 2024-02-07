@@ -1,5 +1,6 @@
 import path from 'path';
 import { defineUserConfig } from 'vuepress';
+import { viteBundler } from '@vuepress/bundler-vite'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
 import theme from './theme.js';
 
@@ -9,6 +10,10 @@ export default defineUserConfig({
   head: [
     ['meta', { name: 'referer', content: 'never' }],
   ],
+  bundler: viteBundler({
+    viteOptions: {},
+    vuePluginOptions: {},
+  }),
   theme,
   plugins: [
     registerComponentsPlugin({

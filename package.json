@@ -11,7 +11,7 @@
   "license": "CC-BY-SA-4.0",
   "homepage": "https://github.com/Zihan-Hu/blog",
   "devDependencies": {
-    "@vuepress/client": "2.0.0-rc.7",
+    "@vuepress/bundler-vite": "2.0.0-rc.7",
     "@vuepress/plugin-register-components": "2.0.0-rc.12",
     "katex": "^0.16.9",
     "vue": "^3.4.15",
