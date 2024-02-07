@@ -1,7 +1,7 @@
-import { hopeTheme } from 'vuepress-theme-hope';
-import navbar from './navbar.js';
+import { hopeTheme } from 'vuepress-theme-hope'
+import navbar from './navbar.js'
 
-const DIARY_PATH = /^article\/\d{4}-\d{2}-\d{2}\.md$/;
+const DIARY_PATH = /^article\/\d{4}-\d{2}-\d{2}\.md$/
 
 export default hopeTheme({
   hostname: 'https://zihan-hu.netlify.app/',
@@ -21,12 +21,12 @@ export default hopeTheme({
   plugins: {
     blog: {
       filter: (page) => {
-        const path = page.filePathRelative;
+        const path = page.filePathRelative
         return (
           !!path?.startsWith('article')
           && !page.frontmatter.home
           && !DIARY_PATH.test(path)
-        );
+        )
       },
     },
     mdEnhance: {
@@ -51,4 +51,4 @@ export default hopeTheme({
   copyright: 'Under CC-BY-SA-4.0 | Copyright © 2023 Zihan Hu',
   contributors: false,
   lastUpdated: false,
-});
+})

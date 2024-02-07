@@ -4,6 +4,7 @@ category:
 tag:
   - 2023 暑期集训
 excerpt: 醒悟，被虐，躺平，迷茫。
+date: 2023-08-15
 ---
 
 # ZROI 2023 暑期集训游记
@@ -30,7 +31,6 @@ excerpt: 醒悟，被虐，躺平，迷茫。
 </image-text-mix>
 
 ## 醒悟
-
 
 <image-text-mix image='https://github.com/ZihanHu/blog/assets/133467869/4207bfa1-ccf9-4a00-8086-763ddebaa965'>
   大门进去，向左进入走廊。
@@ -94,7 +94,6 @@ excerpt: 醒悟，被虐，躺平，迷茫。
 
   可能是由于平均年龄较小，D 班是唯一一个全天有人**大声地窃窃私语**的班。
 </image-text-mix>
-
 
 ## 欢乐 ACM
 
