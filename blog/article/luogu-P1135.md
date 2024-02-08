@@ -14,7 +14,7 @@ date: 2023-07-20
 
 ::: details 点击此处展开题面
 
-<!-- @include: ../../source/luogu-P1135/problem.md -->
+<!-- @include: ../../source/luogu-P1135/README.md -->
 
 :::
 
