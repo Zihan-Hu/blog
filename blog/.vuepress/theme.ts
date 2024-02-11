@@ -49,6 +49,7 @@ export default hopeTheme({
   },
   pageInfo: ['Date', 'Category', 'Tag'],
   copyright: 'Under CC-BY-SA-4.0 | Copyright © 2023 Zihan Hu',
+  displayFooter: true,
   contributors: false,
   lastUpdated: false,
 })
