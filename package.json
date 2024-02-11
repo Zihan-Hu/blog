@@ -9,7 +9,7 @@
   "license": "CC-BY-SA-4.0",
   "homepage": "https://github.com/Zihan-Hu/blog",
   "engines": {
-    "node": "20"
+    "node": "^20.0.0"
   },
   "scripts": {
     "build": "vuepress-vite build blog",
