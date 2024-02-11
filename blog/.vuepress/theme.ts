@@ -1,8 +1,6 @@
 import { hopeTheme } from 'vuepress-theme-hope'
 import navbar from './navbar.js'
 
-const DIARY_PATH = /^article\/\d{4}-\d{2}-\d{2}\.md$/
-
 export default hopeTheme({
   hostname: 'https://zihan-hu.netlify.app/',
   favicon: '/favicon.ico',
@@ -20,13 +18,8 @@ export default hopeTheme({
   },
   plugins: {
     blog: {
-      filter: (page) => {
-        const path = page.filePathRelative
-        return (
-          !!path?.startsWith('article')
-          && !page.frontmatter.home
-          && !DIARY_PATH.test(path)
-        )
+      filter({ filePathRelative }) {
+        return !!filePathRelative?.startsWith('article')
       },
     },
     mdEnhance: {
