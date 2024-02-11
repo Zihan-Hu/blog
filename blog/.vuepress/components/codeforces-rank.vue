@@ -7,7 +7,7 @@ const props = defineProps<{
   rank: Rank
 }>()
 
-const RATINGS: Record<Exclude<Rank, 'unrated' | 'newbie' | 'headquarters'>, number> = {
+const Ratings: Record<Exclude<Rank, 'unrated' | 'newbie' | 'headquarters'>, number> = {
   'pupil': 1200,
   'specialist': 1400,
   'expert': 1600,
@@ -30,12 +30,12 @@ const tip = computed(() => {
       ans += ', rating = 0'
       break
     case 'newbie':
-      ans += `, rating < ${RATINGS.pupil} and ≠ 0`
+      ans += `, rating < ${Ratings.pupil} and ≠ 0`
       break
     case 'headquarters':
       break
     default:
-      ans += `, rating ${RATINGS[props.rank]}`
+      ans += `, rating ${Ratings[props.rank]}`
   }
   return ans
 })
@@ -63,6 +63,7 @@ const tip = computed(() => {
   &.international-grandmaster { color: #ff0000; }
   &.legendary-grandmaster { color: #ff0000; }
   &.headquarters { color: #000000; }
+
   a {
     display: inline-block;
     width: 16px;
