@@ -14,8 +14,10 @@ int search(int l, int r) {
   int mid;
   while (l + 1 < r) {
     mid = l + r >> 1;
-    if (check(mid)) l = mid;
-    else r = mid;
+    if (check(mid))
+      l = mid;
+    else
+      r = mid;
   }
   return l;
 }
@@ -23,6 +25,6 @@ int search(int l, int r) {
 int main() {
   cin >> n >> k;
   for (int i = 1; i <= n; ++i) cin >> a[i];
-  cout << search(0, L); // 从 0 开始，无解时无需特判
+  cout << search(0, L);  // 从 0 开始，无解时无需特判
   return 0;
 }

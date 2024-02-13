@@ -7,7 +7,7 @@ using namespace std;
 typedef unsigned long long ULL;
 
 const ULL M = 2e14, R = 14142136;
-ULL sq[R + 10]; // M 内的完全平方数
+ULL sq[R + 10];  // M 内的完全平方数
 
 /** 预处理完全平方数。 */
 void preprocess() {
@@ -51,4 +51,4 @@ int main() {
 }
 ```
 
-后来[被提醒](https://codeforces.com/blog/entry/123952?#comment-1099308)才知道 `sqrt` 是 `O(log n)`。。所以就有了 `./simulate.cpp`
+后来[被提醒](https://codeforces.com/blog/entry/123952?#comment-1099308)才知道 `sqrt` 是 `O(log n)`。。所以就有了[正解](./simulate.cpp)

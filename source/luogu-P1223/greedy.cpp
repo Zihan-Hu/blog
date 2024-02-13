@@ -4,7 +4,7 @@ using namespace std;
 
 const int N = 1e3 + 5;
 int a[N];
-int t[N]; // `t[i]` 是 `a[i]` 在输入中的序号
+int t[N];  // `t[i]` 是 `a[i]` 在输入中的序号
 
 int main() {
   int n;
@@ -13,7 +13,7 @@ int main() {
     scanf("%d", &a[i]);
     t[i] = i;
   }
-  for (int i = 1; i <= n - 1; ++i) { // 冒泡排序
+  for (int i = 1; i <= n - 1; ++i) {  // 冒泡排序
     bool swapped = 0;
     for (int j = 1; j <= n - i; ++j) {
       if (a[j] > a[j + 1]) {

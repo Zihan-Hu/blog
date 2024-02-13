@@ -6,17 +6,19 @@ char code[N][N];
 int n, m;
 
 bool check(int x, int y) {
-  for (int i = 0; i < 3; ++i) for (int j = 0; j < 3; ++j) { // 左上角
+  for (int i = 0; i < 3; ++i) for (int j = 0; j < 3; ++j) {  // 左上角
     if (code[x + i][y + j] != '#') return 0;
   }
-  for (int i = 6; i < 9; ++i) for (int j = 6; j < 9; ++j) { // 右上角
+  for (int i = 6; i < 9; ++i) for (int j = 6; j < 9; ++j) {  // 右上角
     if (code[x + i][y + j] != '#') return 0;
   }
-  for (int i = 0; i < 4; ++i) { // 左上角周围
+  for (int i = 0; i < 4; ++i) {  // 左上角周围
     if (code[x + i][y + 3] != '.' || code[x + 3][y + i] != '.') return 0;
   }
-  for (int i = 0; i < 4; ++i) { // 右上角周围
-    if (code[x + 5 + i][y + 5] != '.' || code[x + 5][y + 5 + i] != '.') return 0;
+  for (int i = 0; i < 4; ++i) {  // 右上角周围
+    if (code[x + 5 + i][y + 5] != '.' || code[x + 5][y + 5 + i] != '.') {
+      return 0;
+    }
   }
   return 1;
 }

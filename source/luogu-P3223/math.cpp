@@ -10,10 +10,12 @@ inline ULL factorial(int n) {
   return n != 0 ? tgamma(n + 1) : 1;
 }
 inline ULL calcA(int n, int m) {
-  return factorial(n) / factorial(n - m); // n! / (n - m)!
+  // n! / (n - m)!
+  return factorial(n) / factorial(n - m);
 }
 inline ULL calcC(int n, int m) {
-  return factorial(n) / (factorial(m) * factorial(n - m)); // n! / (m! * (n-m)!)
+  // n! / (m! * (n-m)!)
+  return factorial(n) / (factorial(m) * factorial(n - m));
 }
 
 int main() {

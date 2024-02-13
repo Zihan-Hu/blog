@@ -17,15 +17,15 @@ int bfs(int start, int target) {
     for (int i = 1; i <= len; ++i) {
       int h = q.front();
       q.pop();
-      vis[h] = 1; // 标记已达
+      vis[h] = 1;  // 标记已达
       int up = h + k[h], down = h - k[h];
-      if (up <= n) { // 可上
+      if (up <= n) {  // 可上
         if (up == target) return ans;
-        if (!vis[up]) q.push(up); // 如果再去到达过的楼层就会循环
+        if (!vis[up]) q.push(up);  // 如果再去到达过的楼层就会循环
       }
-      if (down >= 1) { // 可下
+      if (down >= 1) {  // 可下
         if (down == target) return ans;
-        if (!vis[down]) q.push(down); // 所以剪枝
+        if (!vis[down]) q.push(down);  // 所以剪枝
       }
     }
   }

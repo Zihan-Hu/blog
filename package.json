@@ -17,6 +17,7 @@
     "dev": "vuepress-vite dev blog",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "lint:cpp": "bash ./scripts/lint/cpp.sh",
     "update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {

@@ -11,7 +11,8 @@ int main() {
     int x, y, z;
     cin >> x >> y >> z;
     // 二进制拆分
-    for (int j = 1; j <= z; j <<= 1) { // @note `z -= j` 不能放在 `for` 的最后面
+    // @note `z -= j` 不能放在 `for` 的最后面
+    for (int j = 1; j <= z; j <<= 1) {
       v[++idx] = x * j;
       w[idx] = y * j;
       z -= j;

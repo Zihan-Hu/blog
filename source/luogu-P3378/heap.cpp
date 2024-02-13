@@ -14,8 +14,10 @@ inline void up(int n) {
 inline void down(int n) {
   int l = n << 1, r = l + 1, t = n;
   // 如果两个都可以 swap，那么选择更大的那个
-  if (l <= idx && value[t] > value[l]) t = l;
-  if (r <= idx && value[t] > value[r]) t = r;
+  if (l <= idx && value[t] > value[l])
+    t = l;
+  if (r <= idx && value[t] > value[r])
+    t = r;
   if (t != n) {
     swap(value[n], value[t]);
     down(t);

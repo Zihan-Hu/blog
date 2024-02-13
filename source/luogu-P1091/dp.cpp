@@ -14,7 +14,7 @@ int main() {
     for (int j = 1; j < i; ++j) {
       if (t[j] < t[i]) f1[i] = max(f1[i], f1[j]);
     }
-    ++f1[i]; // 要加上 `t[i]` 自己
+    ++f1[i];  // 要加上 `t[i]` 自己
   }
   // 从右往左查找 LIS
   for (int i = n; i >= 1; --i) {

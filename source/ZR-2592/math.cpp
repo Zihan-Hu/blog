@@ -2,7 +2,8 @@
 using namespace std;
 typedef long long LL;
 
-const int dx[] = {1, 1, 2, 2, -1, -1, -2, -2}, dy[] = {2, -2, 1, -1, 2, -2, 1, -1};
+const int dx[] = {1, 1, 2, 2, -1, -1, -2, -2},
+          dy[] = {2, -2, 1, -1, 2, -2, 1, -1};
 
 inline bool valid(LL x, LL y) {
   return (x >= 1 && y >= 1);

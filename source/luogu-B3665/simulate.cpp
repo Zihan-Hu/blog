@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-typedef unsigned int Num; // @attention 注意数据范围是 unsigned int
+typedef unsigned int Num;  // @attention 注意数据范围是 unsigned int
 
 const int N = 3e6 + 10;
 vector<Num> a[N];

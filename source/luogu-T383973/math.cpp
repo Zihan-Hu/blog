@@ -10,7 +10,7 @@ vector<Point> el;
 int calc(int x, int y) {
   int ret = INT_MAX;
   for (Point& p : el) {
-    ret = min(ret, abs(x - p.first) + abs(y - p.second)); // 曼哈顿距离
+    ret = min(ret, abs(x - p.first) + abs(y - p.second));  // 曼哈顿距离
   }
   return ret;
 }

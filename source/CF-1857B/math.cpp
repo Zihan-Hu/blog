@@ -22,10 +22,12 @@ int findRound(const string& s, int last) {
       break;
     }
   }
-  if (ans != INT_MAX && s[ans - 1] == '4') { // 可以继续进位
+  if (ans != INT_MAX && s[ans - 1] == '4') {  // 可以继续进位
     for (int i = ans; i >= 0; ++i) {
-      if (s[ans - 1] == '4') --ans;
-      else break;
+      if (s[ans - 1] == '4')
+        --ans;
+      else
+        break;
     }
   }
   return ans;
@@ -36,17 +38,17 @@ int main() {
   int t;
   cin >> t;
   string s;
-  s.reserve(N); // 预分配内存
+  s.reserve(N);  // 预分配内存
   while (t--) {
     cin >> s;
     int w = findRound(s, s.size());
-    while (w != INT_MAX && w != 0) { // 直到不能操作或在最高位操作
+    while (w != INT_MAX && w != 0) {  // 直到不能操作或在最高位操作
       ++s[w - 1];
       for (int i = w; i < s.size(); ++i) s[i] = '0';
       w = findRound(s, w);
     }
-    if (w == 0) { // 在最高位操作
-      cout << 1; // 进位
+    if (w == 0) {  // 在最高位操作
+      cout << 1;  // 进位
       for (int i = 1; i <= s.size(); ++i) cout << 0;
     } else {
       cout << s;

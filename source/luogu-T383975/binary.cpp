@@ -22,8 +22,10 @@ int main() {
     num = 0;
     for (int i = 2; i <= n; ++i) {
       while (i - t > 1) {
-        if (min(sum[i] - sum[t + 1], sum[i - 1] - sum[t]) >= mid) ++t;
-        else break;
+        if (min(sum[i] - sum[t + 1], sum[i - 1] - sum[t]) >= mid)
+          ++t;
+        else
+          break;
       }
       if (min(sum[i] - sum[t], sum[i - 1] - sum[t - 1]) >= mid) num += t;
     }

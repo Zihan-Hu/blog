@@ -4,9 +4,11 @@
 using namespace std;
 
 struct Point {
-  Point(): Point(0, 0) {};
-  Point(int x, int y): x(x), y(y) {};
-  bool operator==(Point& p) const { return this->x == p.x && this->y == p.y; }
+  Point(): Point(0, 0) {}
+  Point(int x, int y): x(x), y(y) {}
+  bool operator==(const Point& p) const {
+    return this->x == p.x && this->y == p.y;
+  }
   int x, y;
 };
 
@@ -18,7 +20,9 @@ int n, m, ans = INT_MAX;
 queue<Point> q;
 
 inline bool valid(Point p) {
-  return !(p.x < 1 || p.x > m || p.y < 1 || p.y > n || blocked[p.x][p.y] || vis[p.x][p.y]);
+  if (p.x < 1 || p.x > m || p.y < 1 || p.y > n) return 0;
+  if (blocked[p.x][p.y] || vis[p.x][p.y]) return 0;
+  return 1;
 }
 inline bool win(Point p) {
   return p.x == 1 || p.x == n || p.y == 1 || p.y == m;
@@ -29,8 +33,8 @@ inline bool win(Point p) {
  * @param step 当前已走步数
  */
 void dfs(Point p, int step) {
-  if (step > ans) return; // 已不能更优，剪枝
-  if (win(p)) { // 因为已进行最优性剪枝，确保了答案更优
+  if (step > ans) return;  // 已不能更优，剪枝
+  if (win(p)) {  // 因为已进行最优性剪枝，确保了答案更优
     ans = step;
     return;
   }
@@ -58,6 +62,6 @@ int main() {
     }
   }
   dfs(start, 0);
-  cout << ((ans == INT_MAX) ? -1 : ans); // @attention 这里必须加括号，否则会 WA
+  cout << ((ans == INT_MAX) ? -1 : ans);  // 这里必须加括号，否则会 WA
   return 0;
 }

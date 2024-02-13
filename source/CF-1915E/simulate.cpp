@@ -25,8 +25,10 @@ int main() {
     for (int i = 1; i <= n; ++i) {
       cin >> a[i];
       if (ok) continue;
-      if (i == 1) sum[i] = a[i];
-      else sum[i] = sum[i - 2] + a[i];
+      if (i == 1)
+        sum[i] = a[i];
+      else
+        sum[i] = sum[i - 2] + a[i];
       LL d = getDiff(i);
       if (d == 0) ok = 1;
       diff.emplace(getDiff(i), i);

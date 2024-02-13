@@ -15,7 +15,7 @@ int main() {
   for (register int i = 1; i <= n; ++i) scanf("%d", &b[i]);
   register LL ans = 0;
   for (register int i = 1; i <= n; ++i) {
-    swap(current, last); // 避免使用 memcpy
+    swap(current, last);  // 避免使用 memcpy
     (*current)[0] = (*last)[0] + a[i];
     for (register int j = 1; j <= i; ++j) {
       if (i == j) {

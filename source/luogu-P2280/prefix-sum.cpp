@@ -2,8 +2,8 @@
 using namespace std;
 
 const int M = 5005;
-int h, w; // 地图长宽
-unsigned sum[M][M]; // 空间不够，这是目标兼前缀和
+int h, w;  // 地图长宽
+unsigned sum[M][M];  // 空间不够，这是目标兼前缀和
 
 /** 计算区域和。 */
 int getAreaSum(int x1, int y1, int x2, int y2) {
@@ -19,7 +19,7 @@ int main() {
   for (int i = 1; i <= n; ++i) {
     int x, y, v;
     cin >> x >> y >> v;
-    x += 1; y += 1; // 坐标从 0 开始，所以整体 + 1
+    x += 1; y += 1;  // 坐标从 0 开始，所以整体 + 1
     sum[x][y] = v;
     w = max(w, x);
     h = max(h, y);

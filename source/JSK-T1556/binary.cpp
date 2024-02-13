@@ -11,8 +11,10 @@ int search(int x) {
   int l = 1, r = n + 1, mid;
   while (l + 1 < r) {
     mid = (l + r >> 1);
-    if (a[mid] < x) l = mid;
-    else r = mid;
+    if (a[mid] < x)
+      l = mid;
+    else
+      r = mid;
   }
   return l;
 }

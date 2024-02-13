@@ -4,20 +4,20 @@ using namespace std;
 
 /** 所处区域类型。 */
 enum AreaType {
-  FRONT = 1, // 正面
-  BACK, // 反面
-  LEFT, // 左侧面
-  RIGHT, // 右侧面
-  TOP, // 上底面
-  BOTTOM, // 下底面
+  FRONT = 1,  // 正面
+  BACK,  // 反面
+  LEFT,  // 左侧面
+  RIGHT,  // 右侧面
+  TOP,  // 上底面
+  BOTTOM,  // 下底面
 };
 
 struct Point2 {
-  Point2(double x = 0, double y = 0): x(x), y(y) {}
+  explicit Point2(double x = 0, double y = 0): x(x), y(y) {}
   double x, y;
 } p1, p2;
 struct Point3 {
-  Point3(double x = 0, double y = 0, double h = 0): x(x), y(y), h(h) {}
+  explicit Point3(double x = 0, double y = 0, double h = 0): x(x), y(y), h(h) {}
   double x, y, h;
 };
 

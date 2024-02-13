@@ -19,14 +19,14 @@ int main() {
     for (i = 1; i <= n; ++i) {
       if (i != 1 && a[i - 1] == a[i]) continue;
       sum += (a[i] - a[i - 1]) * (i - 1);
-      // cerr << "need " << sum << " water when h = " << a[i] << '\n';
+       // cerr << "need " << sum << " water when h = " << a[i] << '\n';
       if (sum > x) {
         sum -= (a[i] - a[i - 1]) * (i - 1);
         break;
       }
       ans = a[i];
     }
-    // cerr << "sum = " << sum << '\n';
+     // cerr << "sum = " << sum << '\n';
     ans += (0, (x - sum)) / (i - 1);
     cout << ans << '\n';
   }

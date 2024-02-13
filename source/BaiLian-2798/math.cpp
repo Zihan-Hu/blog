@@ -37,8 +37,10 @@ string transform(const string& s) {
   if (i != -4) {
     stringstream ss;
     for (int j = 0; j < 4; ++j) {
-      if (i + j < 0) ss << '0';
-      else ss << s[i + j];
+      if (i + j < 0)
+        ss << '0';
+      else
+        ss << s[i + j];
     }
     ans += tr(ss.str());
   }

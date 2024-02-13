@@ -2,10 +2,10 @@
 using namespace std;
 
 const int N = 5e5 + 10, M = 5e6 + 10;
-const int NULL_FLAG = -1; // 表示此位置不存在值（被切割）
+const int NULL_FLAG = -1;  // 表示此位置不存在值（被切割）
 int a[N], b[N];
-bool cnt[M]; // a 中有的值映射为 true，否则为 false
-bool seg[M]; // a 和 b 中都有的值映射为 true，否则为 false
+bool cnt[M];  // a 中有的值映射为 true，否则为 false
+bool seg[M];  // a 和 b 中都有的值映射为 true，否则为 false
 
 /**
  * 进行**狠狠地切割**。

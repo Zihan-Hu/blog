@@ -9,7 +9,7 @@ using namespace std;
  * @param target 要移动到的柱子
  */
 void move(int block, char source, char middle, char target) {
-  if (block == 1) { // 最小，直接移
+  if (block == 1) {  // 最小，直接移
     cout << "1:" << source << "->" << target << '\n';
     return;
   }

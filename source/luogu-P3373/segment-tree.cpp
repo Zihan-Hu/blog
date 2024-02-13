@@ -12,8 +12,8 @@ int a[N], sum[N], tagMul[N], tagAdd[N], n, m;
  * @param r 更新的区间的右边界
  */
 void pushdown(int k, int l, int r) {
-  int ls = k << 1, rs = (k << 1) + 1; // 左右边界
-  if (tagMul[k] != 1) { // 下放乘法标记
+  int ls = k << 1, rs = (k << 1) + 1;  // 左右边界
+  if (tagMul[k] != 1) {  // 下放乘法标记
     tagMul[ls] = LL(tagMul[ls]) * tagMul[k] % m;
     tagAdd[ls] = LL(tagAdd[ls]) * tagMul[k] % m;
     tagMul[rs] = LL(tagMul[rs]) * tagMul[k] % m;
@@ -22,7 +22,7 @@ void pushdown(int k, int l, int r) {
     sum[rs] = LL(sum[rs]) * tagMul[k] % m;
     tagMul[k] = 1;
   }
-  if (tagAdd[k] != 0) { // 下放加法标记
+  if (tagAdd[k] != 0) {  // 下放加法标记
     int mid = l + r >> 1;
     tagAdd[ls] = (tagAdd[ls] + tagAdd[k]) % m;
     tagAdd[rs] = (tagAdd[rs] + tagAdd[k]) % m;
@@ -86,12 +86,10 @@ void update(int a, int b, int mul, int add, int l = 1, int r = n, int k = 1) {
 int query(int a, int b, int l = 1, int r = n, int k = 1) {
   if (a > r || b < l) return 0;
   if (a <= l && b >= r) return sum[k];
-  pushdown(k, l, r); // 先下放标记
+  pushdown(k, l, r);  // 先下放标记
   int mid = l + r >> 1;
-  return (
-    query(a, b, l, mid, k << 1)
-    + query(a, b, mid + 1, r, (k << 1) + 1)
-  ) % m;
+  return ((query(a, b, l, mid, k << 1) + query(a, b, mid + 1, r, (k << 1) + 1))
+          % m);
 }
 
 int main() {

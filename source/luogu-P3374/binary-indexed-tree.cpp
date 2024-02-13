@@ -23,10 +23,8 @@ int query(int a, int b, int l = 1, int r = n, int k = 1) {
   if (a > r || b < l) return 0;
   if (a <= l && b >= r) return sum[k];
   int mid = l + r >> 1;
-  return (
-    query(a, b, l, mid, k << 1)
-    + query(a, b, mid + 1, r, (k << 1) + 1)
-  );
+  return (query(a, b, l, mid, k << 1)
+          + query(a, b, mid + 1, r, (k << 1) + 1));
 }
 
 /** 构建线段树。 */
@@ -54,8 +52,10 @@ void update(int k, int v, int l = 1, int r = n, int idx = 1) {
     sum[idx] = v;
   } else {
     int mid = l + r >> 1;
-    if (k <= mid) update(k, v, l, mid, idx << 1); // 需要更新的在左边
-    else update(k, v, mid + 1, r, (idx << 1) + 1); // 需要更新的在右边
+    if (k <= mid)  // 需要更新的在左边
+      update(k, v, l, mid, idx << 1);
+    else  // 需要更新的在右边
+      update(k, v, mid + 1, r, (idx << 1) + 1);
     sum[idx] = sum[idx << 1] + sum[(idx << 1) + 1];
   }
 }

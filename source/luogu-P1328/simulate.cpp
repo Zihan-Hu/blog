@@ -2,13 +2,13 @@
 using namespace std;
 
 enum Action {
-  CUTTER, // 剪刀
-  STONE, // 石头
-  PAPER, // 布
-  XYR, // 蜥蜴人
-  SPK, // 斯波克
+  CUTTER,  // 剪刀
+  STONE,  // 石头
+  PAPER,  // 布
+  XYR,  // 蜥蜴人
+  SPK,  // 斯波克
 };
-const bool results[5][5] = { // 题目图中阴影部分与右上角对称，但需要取相反值
+const bool results[5][5] = {  // 题目图中阴影部分与右上角对称，但需要取相反值
   {0, 0, 1, 1, 0},
   {1, 0, 0, 1, 0},
   {0, 1, 0, 0, 1},
@@ -16,7 +16,7 @@ const bool results[5][5] = { // 题目图中阴影部分与右上角对称，但
   {1, 1, 0, 0, 0},
 };
 const int GROUP = 205;
-int group1[GROUP], group2[GROUP]; // 周期
+int group1[GROUP], group2[GROUP];  // 周期
 
 int main() {
   int n, n1, n2, r1 = 0, r2 = 0;
