@@ -14,7 +14,7 @@ date: 2023-07-20
 
 ::: details 点击此处展开题面
 
-<!-- @include: ../../source/luogu-P1135/README.md -->
+<!-- @include: ../../source/luogu/P1135/README.md -->
 
 :::
 
@@ -35,4 +35,4 @@ date: 2023-07-20
 
 ## 代码
 
-@[code cpp](../../source/luogu-P1135/bfs.cpp)
+@[code cpp](../../source/luogu/P1135/bfs.cpp)

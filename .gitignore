@@ -7,7 +7,7 @@ blog/.vuepress/.temp
 blog/.vuepress/dist
 blog/images
 
-source/_demo
+source/demo
 source/**/*.exe
 source/**/std.in
 source/**/std.out

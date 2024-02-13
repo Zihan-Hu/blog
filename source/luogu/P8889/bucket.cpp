@@ -1,6 +1,5 @@
 /**
- * 更多注释见 luogu-B3691
- * @see ../luogu-B3691/bucket.cpp
+ * @see ../B3691/bucket.cpp
  */
 #include <cstdio>
 #include <unordered_map>
