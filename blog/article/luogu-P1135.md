@@ -12,11 +12,7 @@ date: 2023-07-20
 
 ## 题面
 
-::: details 点击此处展开题面
-
-<!-- @include: ../../source/luogu/P1135/README.md -->
-
-:::
+[奇怪的电梯](https://luogu.com.cn/problem/P1135)
 
 ## 解题
 
