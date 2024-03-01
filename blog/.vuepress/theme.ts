@@ -7,7 +7,8 @@ export default hopeTheme({
   iconAssets: 'iconfont',
   navbar,
   sidebar: false,
-  editLink: false,
+  repo: 'Zihan-Hu/blog',
+  toc: false,
   blog: {
     name: '胡梓晗',
     description: '全栈业余编程爱好者（实为 OIer）',
