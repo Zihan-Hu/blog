@@ -1,10 +1,10 @@
 {
-  "name": "zihanhu-blog",
+  "name": "@zihan-hu/blog",
   "type": "module",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@8.15.0",
-  "description": "胡梓晗的博客",
+  "description": "Zihan-Hu's Blog",
   "author": "Zihan Hu",
   "license": "CC-BY-4.0",
   "homepage": "https://github.com/Zihan-Hu/blog",

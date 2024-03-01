@@ -6,7 +6,7 @@ import theme from './theme.js'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: '胡梓晗的博客',
+  title: 'Zihan-Hu\'s Blog',
   head: [
     ['meta', { name: 'referer', content: 'never' }],
   ],

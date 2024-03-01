@@ -1,3 +1,3 @@
 # Hello, World!
 
-这里是胡梓晗的博客！
+Welcome to Zihan-Hu's blog.

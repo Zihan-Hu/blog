@@ -10,7 +10,7 @@ export default hopeTheme({
   repo: 'Zihan-Hu/blog',
   toc: false,
   blog: {
-    name: '胡梓晗',
+    name: 'Zihan-Hu',
     description: '全栈业余编程爱好者（实为 OIer）',
     medias: {
       Email: 'mailto:hu-zihan@foxmail.com',
