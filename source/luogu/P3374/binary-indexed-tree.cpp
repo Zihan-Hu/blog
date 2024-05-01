@@ -23,8 +23,7 @@ int query(int a, int b, int l = 1, int r = n, int k = 1) {
   if (a > r || b < l) return 0;
   if (a <= l && b >= r) return sum[k];
   int mid = l + r >> 1;
-  return (query(a, b, l, mid, k << 1)
-          + query(a, b, mid + 1, r, (k << 1) + 1));
+  return (query(a, b, l, mid, k << 1) + query(a, b, mid + 1, r, (k << 1) + 1));
 }
 
 /** 构建线段树。 */
@@ -73,9 +72,7 @@ int main() {
         update(x, a[x] + y);
         a[x] += y;
         break;
-      case 2:
-        cout << query(x, y) << '\n';
-        break;
+      case 2: cout << query(x, y) << '\n'; break;
     }
   }
   return 0;

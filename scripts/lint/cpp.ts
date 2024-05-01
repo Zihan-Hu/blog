@@ -1,44 +1,50 @@
+import { spawn } from 'node:child_process'
 import path from 'node:path'
-import { spawnSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 import process from 'node:process'
+import { readFileSync } from 'node:fs'
 import { readDirDeepSync } from 'read-dir-deep'
 import consola from 'consola'
+// @ts-expect-error bad types
+import parseGitIgnore from 'parse-gitignore'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const FILTER = [
-  '+build/c++14',
-  '-build/namespaces',
-  '-legal/copyright',
-  '-runtime/int',
-  '-runtime/string',
-].join(',')
+const workspace = path.resolve(__dirname, '../..')
 
-function check(file: string) {
-  return spawnSync('cpplint', [`--filter=${FILTER}`, file])
+const includePatterns = ['**.cpp', '**.h', '**.hpp']
+
+// 从 .clang-format-ignore 中读取忽略的文件 pattern
+const clangFormatIgnorePath = path.resolve(workspace, '.clang-format-ignore')
+const clangFormatIgnore = readFileSync(clangFormatIgnorePath)
+const excludePatterns = parseGitIgnore(clangFormatIgnore).patterns
+
+function fixFiles(files: string[]) {
+  return new Promise<void>((resolve, reject) => {
+    const child = spawn('clang-format', ['-i', ...files], {
+      stdio: 'pipe',
+      cwd: workspace,
+    })
+
+    child.stderr.pipe(process.stderr)
+    child.addListener('close', (code) => {
+      if (!code)
+        resolve()
+      else
+        reject(new Error(`clang-format exited with code ${code}`))
+    })
+  })
 }
 
-const SUFFIXS = ['.cpp', '.h', '.hpp']
-const needCheck = (file: string) => SUFFIXS.some(s => file.endsWith(s))
-
-function main() {
-  const root = path.resolve(__dirname, '../../source')
-  const files = readDirDeepSync(root, { absolute: true }).filter(needCheck)
-  let errors = 0
-
-  for (const file of files) {
-    const p = check(file)
-    if (p.status) {
-      consola.error(p.stderr.toString())
-      ++errors
-    }
-  }
-
-  if (errors)
-    consola.info(`共发现 ${errors} 个错误`)
-  return errors ? 1 : 0
+try {
+  const files = readDirDeepSync(workspace, {
+    patterns: includePatterns,
+    ignore: excludePatterns,
+  })
+  await fixFiles(files)
 }
-
-process.exit(main())
+catch (error) {
+  consola.error(error)
+  process.exit(1)
+}

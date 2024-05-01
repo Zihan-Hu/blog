@@ -1,5 +1,5 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 typedef long long LL;
 
@@ -14,7 +14,7 @@ bool check(int mid) {
     t2 = min(t2, LL(b[i]));
   }
   for (int i = 1; i <= m; ++i) {  // 处理每个商品
-    switch (t[i]) {  // 都按最小汇率兑换
+    switch (t[i]) {               // 都按最小汇率兑换
       case 1: f[i] = t1 * c[i]; break;
       case 2: f[i] = t2 * c[i]; break;
     }
@@ -22,7 +22,7 @@ bool check(int mid) {
   sort(f + 1, f + m + 1);
   LL ans = 0;
   for (int i = 1; i <= k; ++i) ans += f[i];  // 买了最便宜的 `k` 个
-  return (ans <= s);  // 是否能买够
+  return (ans <= s);                         // 是否能买够
 }
 
 int main() {

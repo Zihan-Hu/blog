@@ -1,11 +1,11 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 const int N = 305;
 
 struct Student {
-  explicit Student(string name = "", int score = 0): name(name), score(score) {
+  explicit Student(string name = "", int score = 0) : name(name), score(score) {
     this->name.reserve(50);
   }
   string name;
@@ -23,7 +23,7 @@ int main() {
     Student p2;
     for (int i = 1; i <= n; ++i) {
       cin >> p2.name >> p2.score;
-      if (!right) continue;  // 结果错误是最坏情况，无需再判
+      if (!right) continue;        // 结果错误是最坏情况，无需再判
       if (p2.score != p[i].score)  // 排序关键字不相同，即为结果错误
         right = false;
       else if (p2.name != p[i].name)  // 名字不相同，即为不稳定
@@ -33,7 +33,7 @@ int main() {
       cout << "Right\n";
     } else {
       cout << (right ? "Not Stable" : "Error") << '\n';
-       // 输出正确结果
+      // 输出正确结果
       for (int i = 1; i <= n; ++i) {
         cout << p[i].name << ' ' << p[i].score << '\n';
       }

@@ -1,5 +1,5 @@
-#include <iostream>
 #include <climits>
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -14,7 +14,7 @@ inline bool needRound(char c) {
  * @param s 数值
  * @param last 上一次四舍五入的下标
  */
-int findRound(const string& s, int last) {
+int findRound(const string &s, int last) {
   int ans = INT_MAX;
   for (int i = 0; i < last; ++i) {
     if (needRound(s[i])) {
@@ -34,7 +34,8 @@ int findRound(const string& s, int last) {
 }
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   int t;
   cin >> t;
   string s;
@@ -48,7 +49,7 @@ int main() {
       w = findRound(s, w);
     }
     if (w == 0) {  // 在最高位操作
-      cout << 1;  // 进位
+      cout << 1;   // 进位
       for (int i = 1; i <= s.size(); ++i) cout << 0;
     } else {
       cout << s;

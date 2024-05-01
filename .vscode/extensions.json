@@ -2,6 +2,7 @@
   "recommendations": [
     "cmdblock.oi-runner",
     "dbaeumer.vscode-eslint",
-    "vue.volar"
+    "vue.volar",
+    "xaver.clang-format"
   ]
 }

@@ -1,6 +1,6 @@
+#include <cmath>
 #include <iostream>
 #include <string>
-#include <cmath>
 using namespace std;
 
 typedef unsigned long long ULL;

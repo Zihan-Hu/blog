@@ -1,5 +1,5 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 typedef long long LL;
 
@@ -19,7 +19,7 @@ int main() {
   LL ans = 0;
   for (int i = 1; i <= n; ++i) {
     if (d[i] > i) ans += d[i] - i;  // 这里减掉不耐烦的扣分
-    ans += a[i];  // 不扳动的都要加
+    ans += a[i];                    // 不扳动的都要加
   }
   printf("%lld", ans);
   return 0;

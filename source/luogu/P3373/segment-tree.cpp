@@ -13,7 +13,8 @@ int a[N], sum[N], tagMul[N], tagAdd[N], n, m;
  */
 void pushdown(int k, int l, int r) {
   int ls = k << 1, rs = (k << 1) + 1;  // 左右边界
-  if (tagMul[k] != 1) {  // 下放乘法标记
+  // 下放乘法标记
+  if (tagMul[k] != 1) {
     tagMul[ls] = LL(tagMul[ls]) * tagMul[k] % m;
     tagAdd[ls] = LL(tagAdd[ls]) * tagMul[k] % m;
     tagMul[rs] = LL(tagMul[rs]) * tagMul[k] % m;
@@ -88,8 +89,8 @@ int query(int a, int b, int l = 1, int r = n, int k = 1) {
   if (a <= l && b >= r) return sum[k];
   pushdown(k, l, r);  // 先下放标记
   int mid = l + r >> 1;
-  return ((query(a, b, l, mid, k << 1) + query(a, b, mid + 1, r, (k << 1) + 1))
-          % m);
+  int res = query(a, b, l, mid, k << 1) + query(a, b, mid + 1, r, (k << 1) + 1);
+  return res % m;
 }
 
 int main() {
@@ -109,9 +110,7 @@ int main() {
         cin >> k;
         update(x, y, 1, k);
         break;
-      case 3:
-        cout << query(x, y) << '\n';
-        break;
+      case 3: cout << query(x, y) << '\n'; break;
     }
   }
   return 0;

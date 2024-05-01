@@ -6,7 +6,8 @@ bool a[N];
 int n;
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   cin >> n;
   for (int i = 1; i <= n; ++i) cin >> a[i];
   for (int i = n; i >= 1; i -= 2) {

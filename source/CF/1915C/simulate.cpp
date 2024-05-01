@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 using namespace std;
 typedef long long LL;
 
@@ -10,7 +10,8 @@ inline bool isSquare(LL x) {
 }
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   int t;
   cin >> t;
   int n, a;

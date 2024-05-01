@@ -1,7 +1,7 @@
 #pragma once
 
 // 限制只能使用 64 位编译器，因为 32 位编译器没 `__int128`
-static_assert(sizeof(void*) == 8, "Only 64-bit platforms are supported.");
+static_assert(sizeof(void *) == 8, "Only 64-bit platforms are supported.");
 
 #include <iostream>
 

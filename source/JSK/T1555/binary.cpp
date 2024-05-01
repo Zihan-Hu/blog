@@ -1,6 +1,6 @@
-#include <iostream>
-#include <cstdio>
 #include <algorithm>
+#include <cstdio>
+#include <iostream>
 using namespace std;
 
 const int N = 1e5 + 5;

@@ -1,7 +1,7 @@
-#include <iostream>
-#include <string>
 #include <algorithm>
+#include <iostream>
 #include <sstream>
+#include <string>
 using namespace std;
 
 const char ch[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -26,7 +26,7 @@ char tr(string s) {
   return '0';
 }
 /** 2 进制转 16 进制。 */
-string transform(const string& s) {
+string transform(const string &s) {
   string ans;
   int i;
   for (i = s.length() - 4; i >= 0; i -= 4) {

@@ -1,10 +1,10 @@
-#include <iostream>
 #include <cstdio>
+#include <iostream>
 using namespace std;
 
 const int TABLE[] = {1, 0, 0, 0, 0, 0, 1, 0, 2, 1};
 
-int calc(const string& n) {
+int calc(const string &n) {
   int pos = 0;
   if (n[0] == '-') ++pos;
   if (n == "0" || n == "-0") return TABLE[0];

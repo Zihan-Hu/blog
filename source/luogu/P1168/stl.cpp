@@ -1,12 +1,13 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
 vector<int> v;
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   int n;
   cin >> n;
   for (int i = 1; i <= n; ++i) {

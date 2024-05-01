@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cstring>
+#include <iostream>
 using namespace std;
 
 const int N = 1e3;
@@ -16,8 +16,7 @@ int main() {
   }
   for (int k = 1; k <= n; ++k)
     for (int i = 1; i <= n; ++i)
-      for (int j = 1; j <= n; ++j)
-        f[i][j] = min(f[i][k] + f[k][j], f[i][j]);
+      for (int j = 1; j <= n; ++j) f[i][j] = min(f[i][k] + f[k][j], f[i][j]);
   for (int i = 1; i <= n; ++i) {
     for (int j = 1; j <= n; ++j) printf("%d ", f[i][j]);
     printf("\n");

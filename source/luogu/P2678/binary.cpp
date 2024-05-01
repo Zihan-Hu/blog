@@ -11,7 +11,7 @@ int m, n, d[N];
 int remove(int dis) {
   int ans = 0, last = 0;
   for (int i = 1; i <= n + 1; ++i) {  // 需要遍历到终点
-    if (d[i] - last < dis)  // 需要移走
+    if (d[i] - last < dis)            // 需要移走
       ++ans;
     else
       last = d[i];
@@ -35,7 +35,7 @@ int main() {
   int l;
   cin >> l >> n >> m;
   if (n == 0) {  // 对于中间无岩石的特判
-    cout << l;  // 不特判会输出 `l - 1`
+    cout << l;   // 不特判会输出 `l - 1`
     return 0;
   }
   for (int i = 1; i <= n; ++i) cin >> d[i];

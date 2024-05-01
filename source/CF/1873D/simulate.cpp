@@ -5,7 +5,8 @@ using namespace std;
 const int N = 2e5 + 10;
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   int t;
   cin >> t;
   int n, k, ans;

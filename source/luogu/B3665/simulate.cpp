@@ -7,7 +7,8 @@ const int N = 3e6 + 10;
 vector<Num> a[N];
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   int n, q;
   cin >> n >> q;
   int s;

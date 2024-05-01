@@ -3,7 +3,8 @@
 using namespace std;
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   string s;
   cin >> s;
   int t = 0, d = 0;

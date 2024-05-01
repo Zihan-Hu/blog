@@ -1,29 +1,30 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 using namespace std;
 
 /** 所处区域类型。 */
 enum AreaType {
   FRONT = 1,  // 正面
-  BACK,  // 反面
-  LEFT,  // 左侧面
-  RIGHT,  // 右侧面
-  TOP,  // 上底面
-  BOTTOM,  // 下底面
+  BACK,       // 反面
+  LEFT,       // 左侧面
+  RIGHT,      // 右侧面
+  TOP,        // 上底面
+  BOTTOM,     // 下底面
 };
 
 struct Point2 {
-  explicit Point2(double x = 0, double y = 0): x(x), y(y) {}
+  explicit Point2(double x = 0, double y = 0) : x(x), y(y) {}
   double x, y;
 } p1, p2;
 struct Point3 {
-  explicit Point3(double x = 0, double y = 0, double h = 0): x(x), y(y), h(h) {}
+  explicit Point3(double x = 0, double y = 0, double h = 0)
+      : x(x), y(y), h(h) {}
   double x, y, h;
 };
 
 int a, b, c;
 
-AreaType toAreaType(const Point2& p) {
+AreaType toAreaType(const Point2 &p) {
   if (p.x < c) return AreaType::LEFT;
   if (p.x > a + c) return AreaType::RIGHT;
   if (p.y < b) return AreaType::TOP;
@@ -31,7 +32,7 @@ AreaType toAreaType(const Point2& p) {
   if (p.y > b + c + b) return AreaType::BACK;
   return AreaType::BOTTOM;
 }
-Point3 toPoint3(const Point2& p) {
+Point3 toPoint3(const Point2 &p) {
   switch (toAreaType(p)) {
     case AreaType::FRONT: return Point3(p.x, b + c, c + b - p.y);
     case AreaType::BACK: return Point3(p.x, b + c + b, p.y - b - c - b);

@@ -1,17 +1,16 @@
-#include <iostream>
 #include <climits>
+#include <iostream>
 #include <queue>
 using namespace std;
 
 struct Point {
-  Point(): Point(0, 0) {}
-  Point(int x, int y): x(x), y(y) {}
-  bool operator==(const Point& p) const {
+  Point() : Point(0, 0) {}
+  Point(int x, int y) : x(x), y(y) {}
+  bool operator==(const Point &p) const {
     return this->x == p.x && this->y == p.y;
   }
   int x, y;
 };
-
 
 const int N = 20;
 int dx[] = {1, 0, -1, 0}, dy[] = {0, 1, 0, -1};

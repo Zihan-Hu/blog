@@ -16,8 +16,7 @@
     "clean-dev": "vuepress-vite dev blog --clean-cache",
     "dev": "vuepress-vite dev blog",
     "lint": "pnpm lint:js && pnpm lint:cpp",
-    "lint:js": "eslint .",
-    "lint:js:fix": "eslint . --fix",
+    "lint:js": "eslint . --fix",
     "lint:cpp": "tsx ./scripts/lint/cpp.ts",
     "update-package": "pnpm dlx vp-update"
   },
@@ -31,12 +30,14 @@
     "vuepress-theme-hope": "2.0.0-rc.32"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.9.0",
-    "@types/node": "^20.11.30",
+    "@antfu/eslint-config": "^2.16.1",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.12.7",
     "consola": "^3.2.3",
+    "parse-gitignore": "^2.0.0",
     "read-dir-deep": "^8.0.0",
-    "tsx": "^4.7.1",
-    "typescript": "^5.4.3"
+    "tsx": "^4.8.0",
+    "typescript": "^5.4.5"
   },
   "pnpm": {
     "patchedDependencies": {

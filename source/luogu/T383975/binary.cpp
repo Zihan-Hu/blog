@@ -7,7 +7,8 @@ int a[N];
 LL sum[N];
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   int n;
   LL k;
   cin >> n >> k;

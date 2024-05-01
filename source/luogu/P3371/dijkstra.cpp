@@ -1,7 +1,7 @@
-#include <iostream>
 #include <climits>
-#include <vector>
 #include <cstring>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 struct Edge {
@@ -35,7 +35,8 @@ void dijkstra(int n, int s) {
 }
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   int n, m, s, u, v, w;
   cin >> n >> m >> s;
   for (int i = 1; i <= m; ++i) {

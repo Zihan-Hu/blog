@@ -1,8 +1,8 @@
-#include <iostream>
 #include <climits>
 #include <cstring>
-#include <vector>
+#include <iostream>
 #include <queue>
+#include <vector>
 using namespace std;
 
 struct Edge {
@@ -11,9 +11,7 @@ struct Edge {
 };
 struct Node {
   int dis, u;
-  inline bool operator>(const Node& a) const {
-    return this->dis > a.dis;
-  }
+  inline bool operator>(const Node &a) const { return this->dis > a.dis; }
 };
 
 const int INF = 0x3f3f3f3f, BINF = 0x3f;
@@ -43,7 +41,8 @@ void dijkstra(int n, int s) {
 }
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   int n, m, s, u, v, w;
   cin >> n >> m >> s;
   for (int i = 1; i <= m; ++i) {

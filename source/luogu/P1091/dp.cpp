@@ -1,12 +1,13 @@
-#include <iostream>
 #include <climits>
+#include <iostream>
 using namespace std;
 
 const int N = 105, T = 240;
 int f1[N], f2[N], t[N], n;
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(nullptr);
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
   cin >> n;
   for (int i = 1; i <= n; ++i) cin >> t[i];
   // 从左往右查找 LIS
