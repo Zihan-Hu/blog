@@ -1,3 +1,3 @@
 # Hello, World!
 
-Welcome to Zihan-Hu's blog.
+Welcome to typed-sigterm's blog.

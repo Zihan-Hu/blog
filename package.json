@@ -1,13 +1,12 @@
 {
-  "name": "@zihan-hu/blog",
+  "name": "@typed-sigterm/blog",
   "type": "module",
-  "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@8.15.0",
-  "description": "Zihan-Hu's Blog",
-  "author": "Zihan Hu",
+  "description": "typed-sigterm's Blog",
+  "author": "typed sigterm",
   "license": "CC-BY-4.0",
-  "homepage": "https://github.com/Zihan-Hu/blog",
+  "homepage": "https://github.com/typed-sigterm/blog",
   "engines": {
     "node": "^20.0.0"
   },

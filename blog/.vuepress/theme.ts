@@ -2,20 +2,20 @@ import { hopeTheme } from 'vuepress-theme-hope'
 import navbar from './navbar.js'
 
 export default hopeTheme({
-  hostname: 'https://zihan-hu.netlify.app/',
+  hostname: 'https://typed-sigterm.netlify.app/',
   favicon: '/favicon.ico',
   iconAssets: 'iconfont',
   navbar,
   sidebar: false,
-  repo: 'Zihan-Hu/blog',
+  repo: 'typed-sigterm/blog',
   toc: false,
   blog: {
     avatar: '/avatar.png',
-    name: 'Zihan Hu',
+    name: 'typed-sigterm',
     description: '全栈业余编程爱好者（实为 OIer）',
     medias: {
-      Email: 'mailto:hu-zihan@foxmail.com',
-      GitHub: 'https://github.com/Zihan-Hu',
+      Email: 'mailto:typed-sigterm@gmail.com',
+      GitHub: 'https://github.com/typed-sigterm',
     },
   },
   plugins: {
@@ -31,7 +31,7 @@ export default hopeTheme({
     },
     comment: {
       provider: 'Giscus',
-      repo: 'Zihan-Hu/blog',
+      repo: 'typed-sigterm/blog',
       repoId: 'R_kgDOKYKFkw',
       category: '文章评论',
       categoryId: 'DIC_kwDOKYKFk84CZm_U',
@@ -43,7 +43,7 @@ export default hopeTheme({
     },
   },
   pageInfo: ['Date', 'Category', 'Tag'],
-  copyright: 'Under CC-BY-4.0 | Copyright © 2023-present Zihan Hu',
+  copyright: 'Under CC-BY-4.0 | Copyright © 2023-present typed-sigterm',
   displayFooter: true,
   contributors: false,
   lastUpdated: false,

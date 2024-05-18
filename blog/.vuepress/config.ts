@@ -7,7 +7,7 @@ import theme from './theme.js'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: 'Zihan-Hu\'s Blog',
+  title: 'typed-sigterm\'s Blog',
   head: [
     ['meta', { name: 'referer', content: 'never' }],
   ],
