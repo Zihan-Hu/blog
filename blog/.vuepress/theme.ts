@@ -2,7 +2,7 @@ import { hopeTheme } from 'vuepress-theme-hope'
 import navbar from './navbar.js'
 
 export default hopeTheme({
-  hostname: 'https://typed-sigterm.netlify.app/',
+  hostname: 'https://blog.typed-sigterm.me/',
   favicon: '/favicon.ico',
   iconAssets: 'iconfont',
   navbar,
