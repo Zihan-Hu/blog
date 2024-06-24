@@ -6,7 +6,6 @@ function initMixpanel() {
   if (__VUEPRESS_DEV__ || !token)
     return
   mixpanel.init(token, {
-    debug: __VUEPRESS_DEV__,
     track_pageview: 'url-with-path',
     persistence: 'localStorage',
   })

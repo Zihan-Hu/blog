@@ -11,9 +11,9 @@
     "node": "^20.0.0"
   },
   "scripts": {
-    "build": "dotenv -- vuepress build blog",
-    "clean-dev": "dotenv -- vuepress dev blog --clean-cache",
-    "dev": "dotenv -- vuepress dev blog",
+    "build": "vuepress build blog",
+    "clean-dev": "vuepress dev blog --clean-cache",
+    "dev": "vuepress dev blog",
     "lint": "pnpm lint:js && pnpm lint:cpp",
     "lint:js": "eslint . --fix",
     "lint:cpp": "tsx ./scripts/lint/cpp.ts",
@@ -34,7 +34,6 @@
     "@types/mixpanel-browser": "^2.49.0",
     "@types/node": "^20.0.0",
     "consola": "^3.2.3",
-    "dotenv-cli": "^7.4.2",
     "parse-gitignore": "^2.0.0",
     "read-dir-deep": "^8.0.0",
     "tsx": "^4.15.6",

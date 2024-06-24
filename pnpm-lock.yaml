@@ -45,9 +45,6 @@ importers:
       consola:
         specifier: ^3.2.3
         version: 3.2.3
-      dotenv-cli:
-        specifier: ^7.4.2
-        version: 7.4.2
       parse-gitignore:
         specifier: ^2.0.0
         version: 2.0.0
@@ -1478,18 +1475,6 @@ packages:
   domutils@3.1.0:
     resolution: {integrity: sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==}
 
-  dotenv-cli@7.4.2:
-    resolution: {integrity: sha512-SbUj8l61zIbzyhIbg0FwPJq6+wjbzdn9oEtozQpZ6kW2ihCcapKVZj49oCT3oPM+mgQm+itgvUQcG5szxVrZTA==}
-    hasBin: true
-
-  dotenv-expand@10.0.0:
-    resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==}
-    engines: {node: '>=12'}
-
-  dotenv@16.4.5:
-    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
-    engines: {node: '>=12'}
-
   electron-to-chromium@1.4.807:
     resolution: {integrity: sha512-kSmJl2ZwhNf/bcIuCH/imtNOKlpkLDn2jqT5FJ+/0CXjhnFaOa9cOe9gHKKy71eM49izwuQjZhKk+lWQ1JxB7A==}
 
@@ -2171,9 +2156,6 @@ packages:
   minimatch@9.0.4:
     resolution: {integrity: sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==}
     engines: {node: '>=16 || 14 >=14.17'}
-
-  minimist@1.2.8:
-    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
   mitt@3.0.1:
     resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
@@ -4425,17 +4407,6 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  dotenv-cli@7.4.2:
-    dependencies:
-      cross-spawn: 7.0.3
-      dotenv: 16.4.5
-      dotenv-expand: 10.0.0
-      minimist: 1.2.8
-
-  dotenv-expand@10.0.0: {}
-
-  dotenv@16.4.5: {}
-
   electron-to-chromium@1.4.807: {}
 
   emoji-regex@10.3.0: {}
@@ -5234,8 +5205,6 @@ snapshots:
   minimatch@9.0.4:
     dependencies:
       brace-expansion: 2.0.1
-
-  minimist@1.2.8: {}
 
   mitt@3.0.1: {}
 
