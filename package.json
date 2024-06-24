@@ -11,9 +11,9 @@
     "node": "^20.0.0"
   },
   "scripts": {
-    "build": "vuepress-vite build blog",
-    "clean-dev": "vuepress-vite dev blog --clean-cache",
-    "dev": "vuepress-vite dev blog",
+    "build": "dotenv -- vuepress build blog",
+    "clean-dev": "dotenv -- vuepress dev blog --clean-cache",
+    "dev": "dotenv -- vuepress dev blog",
     "lint": "pnpm lint:js && pnpm lint:cpp",
     "lint:js": "eslint . --fix",
     "lint:cpp": "tsx ./scripts/lint/cpp.ts",
@@ -21,9 +21,9 @@
   },
   "dependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.13",
-    "@vuepress/plugin-baidu-analytics": "2.0.0-rc.36",
     "@vuepress/plugin-register-components": "2.0.0-rc.34",
     "katex": "^0.16.10",
+    "mixpanel-browser": "^2.53.0",
     "vue": "^3.4.29",
     "vuepress": "2.0.0-rc.13",
     "vuepress-theme-hope": "2.0.0-rc.49"
@@ -31,11 +31,14 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
     "@tsconfig/node20": "^20.1.4",
+    "@types/mixpanel-browser": "^2.49.0",
     "@types/node": "^20.0.0",
     "consola": "^3.2.3",
+    "dotenv-cli": "^7.4.2",
     "parse-gitignore": "^2.0.0",
     "read-dir-deep": "^8.0.0",
     "tsx": "^4.15.6",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.2",
+    "vite": "^5.3.1"
   }
 }
