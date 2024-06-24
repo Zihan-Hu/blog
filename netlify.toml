@@ -2,5 +2,5 @@
 command = "pnpm build"
 publish = "blog/.vuepress/dist"
 
-[build.enviroment]
+[context.production]
 BLOG_MIXPANEL_TOKEN = "f2ff5f69fd09c64c351d30806f9b48cb"
