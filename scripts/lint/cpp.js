@@ -5,7 +5,6 @@ import process from 'node:process'
 import { readFileSync } from 'node:fs'
 import { readDirDeepSync } from 'read-dir-deep'
 import consola from 'consola'
-// @ts-expect-error bad types
 import parseGitIgnore from 'parse-gitignore'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -20,8 +19,12 @@ const clangFormatIgnorePath = path.resolve(workspace, '.clang-format-ignore')
 const clangFormatIgnore = readFileSync(clangFormatIgnorePath)
 const excludePatterns = parseGitIgnore(clangFormatIgnore).patterns
 
-function fixFiles(files: string[]) {
-  return new Promise<void>((resolve, reject) => {
+/**
+ * @param {string[]} files
+ * @returns {Promise<void>}
+ */
+function fixFiles(files) {
+  return new Promise((resolve, reject) => {
     const child = spawn('clang-format', ['-i', ...files], {
       stdio: 'pipe',
       cwd: workspace,

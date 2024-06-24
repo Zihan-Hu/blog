@@ -16,7 +16,7 @@
     "dev": "vuepress dev blog",
     "lint": "pnpm lint:js && pnpm lint:cpp",
     "lint:js": "eslint . --fix",
-    "lint:cpp": "tsx ./scripts/lint/cpp.ts",
+    "lint:cpp": "node ./scripts/lint/cpp.js",
     "update-package": "pnpm dlx vp-update"
   },
   "dependencies": {
@@ -36,7 +36,6 @@
     "consola": "^3.2.3",
     "parse-gitignore": "^2.0.0",
     "read-dir-deep": "^8.0.0",
-    "tsx": "^4.15.6",
     "typescript": "^5.5.2",
     "vite": "^5.3.1"
   }
