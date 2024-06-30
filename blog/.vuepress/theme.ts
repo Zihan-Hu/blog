@@ -4,7 +4,7 @@ import navbar from './navbar.js'
 export default hopeTheme({
   hostname: 'https://blog.typed-sigterm.me/',
   favicon: '/favicon.ico',
-  iconAssets: 'iconfont',
+  iconAssets: 'iconify',
   navbar,
   sidebar: false,
   repo: 'typed-sigterm/blog',
