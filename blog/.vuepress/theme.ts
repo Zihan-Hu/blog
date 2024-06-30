@@ -41,6 +41,9 @@ export default hopeTheme({
         'BiliBili',
       ],
     },
+    shiki: {
+      notationDiff: true,
+    },
   },
   pageInfo: ['Date', 'Category', 'Tag'],
   copyright: 'Under CC-BY-4.0 | Copyright © 2023-present typed-sigterm',
