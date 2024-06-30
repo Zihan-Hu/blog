@@ -4,3 +4,9 @@ publish = "blog/.vuepress/dist"
 
 [context.production.environment]
 BLOG_MIXPANEL_TOKEN = "f2ff5f69fd09c64c351d30806f9b48cb"
+
+[[redirects]]
+from = "https://typed-sigterm.netlify.app"
+to = "https://blog.typed-sigterm.me"
+status = 301
+force = true
