@@ -17,11 +17,11 @@ date: 2023-08-15
 
 回家补作业是件悲伤的逝。
 
-<image-text-mix image='https://github.com/ZihanHu/blog/assets/133467869/aa2f5013-5e27-49a9-ac6c-5cf4350c5206'>
+<image-text-mix image='https://blog-assets.typed-sigterm.me/images/68bd4ed179861617b1a398cf7ac4ad7a.jpg'>
   集训地点在金华市新东方双语学校，是 <s>还没装修完的</s> 贵族学校。
 </image-text-mix>
 
-<image-text-mix image='https://github.com/ZihanHu/blog/assets/133467869/5dfbb062-1364-4f0d-9074-f7cdd5c21146'>
+<image-text-mix image='https://blog-assets.typed-sigterm.me/images/d844dc7e9151a31c77bd7ed1cf550243.jpg'>
   开幕暴击：
   <blockquote>
     终生学习，全球视野，独立人格，社会责任。
@@ -32,7 +32,7 @@ date: 2023-08-15
 
 ## 醒悟
 
-<image-text-mix image='https://github.com/ZihanHu/blog/assets/133467869/4207bfa1-ccf9-4a00-8086-763ddebaa965'>
+<image-text-mix image='https://blog-assets.typed-sigterm.me/images/398861c978d0761baec4223efe8a0abe.jpg'>
   大门进去，向左进入走廊。
 
   照片中亮度调得过高的门，进去就是餐厅。
@@ -40,7 +40,7 @@ date: 2023-08-15
   由于餐厅一直在装修，我们的吃饭问题在教室中解决。
 </image-text-mix>
 
-<image-text-mix :image='["https://github.com/ZihanHu/blog/assets/133467869/bf658f99-7211-46f9-81ea-ba29cba5485f", "https://github.com/ZihanHu/blog/assets/133467869/affbe64c-105d-4ba2-85c1-ba225d99a447"]'>
+<image-text-mix :image='["https://blog-assets.typed-sigterm.me/images/12bb0ccecca895b4092e90c78eac9090.jpg", "https://blog-assets.typed-sigterm.me/images/2c77dea5cd93d514ead60debdf9fd92e.jpg"]'>
   动员大会算是印象比较深的活动。
 </image-text-mix>
 
@@ -54,7 +54,7 @@ date: 2023-08-15
 >
 > 况且现在对 OIer 的扶持政策越来越差。
 
-<image-text-mix image='https://github.com/ZihanHu/blog/assets/133467869/183e5eb8-3a03-4252-92f4-e26ea1376e36'>
+<image-text-mix image='https://blog-assets.typed-sigterm.me/images/f7737c723c054fdb31b2323c01398c37.jpg'>
   才意识到 OI 是一种奢侈品。
 
   接触了其他 OIer 后，我才明白 OI 比我想象中的残酷得多。
@@ -85,9 +85,9 @@ date: 2023-08-15
 
 宿舍楼和教学楼在外观上没什么区别：
 
-![](https://github.com/ZihanHu/blog/assets/133467869/f324f47c-8938-456c-98c0-adb6c1ea8bc2)
+![](https://blog-assets.typed-sigterm.me/images/8f938b6e44e725fabb935ef36ffd38d9.jpg)
 
-<image-text-mix :image='["https://github.com/ZihanHu/blog/assets/133467869/8dd0a47a-113e-4e78-a60f-ea9d8362dc46", "https://github.com/ZihanHu/blog/assets/133467869/9da9a30b-e765-436b-b1aa-fa3402b3f81b"]'>
+<image-text-mix :image='["https://blog-assets.typed-sigterm.me/images/f0ff05338dd1da8a96d2a4def3a6758c.jpg", "https://blog-assets.typed-sigterm.me/images/8601d9be8038e5f9bf822617562f9bcf.jpg"]'>
   宿舍是三人间，但只有我住满了 30 天。
 
   最后 10 天的晚自习，我都在宿舍，因为教室太吵~~并且有时想摆烂~~
@@ -97,7 +97,7 @@ date: 2023-08-15
 
 ## 欢乐 ACM
 
-<image-text-mix image='https://github.com/ZihanHu/blog/assets/133467869/d1e6b507-22e5-4787-b672-20b0929ba622'>
+<image-text-mix image='https://blog-assets.typed-sigterm.me/images/1c936964cf34c0cea8df429713c53933.jpg'>
   打不来，没几道过的。
 
   一共得了 5 个气球，其中有 2 个已经瘪了（笑
@@ -116,35 +116,43 @@ date: 2023-08-15
 走廊窗外：
 
 <div style='display: flex; flex-direction: row; width: 100%;'>
-  <img style='padding: 4px; max-width: 29%; object-fit: contain;' src='https://github.com/ZihanHu/blog/assets/133467869/38167401-6e98-4dfd-9d41-166d5212adea' />
-  <img style='padding: 4px; max-width: 69%; object-fit: contain;' src='https://github.com/ZihanHu/blog/assets/133467869/8dd0a47a-113e-4e78-a60f-ea9d8362dc46' />
+  <img style='padding: 4px; max-width: 29%; object-fit: contain;' src='https://blog-assets.typed-sigterm.me/images/0604becf02ee3c44c8c7b3b4e7b8941f.jpg' />
+  <img style='padding: 4px; max-width: 69%; object-fit: contain;' src='https://blog-assets.typed-sigterm.me/images/058e9cbfe27373323792c31921ac23c5.jpg' />
 </div>
 
 楼梯口：
 
-![](https://github.com/ZihanHu/blog/assets/133467869/a846208a-736a-462e-bab0-5d3e6def952f)
+![](https://blog-assets.typed-sigterm.me/images/4933bc65b5591adeb880ff7401b62f62.jpg)
 
 教学楼和宿舍楼之间的小花园：
 
 <div style='display: flex; flex-direction: row; width: 100%;'>
-  <img style='padding: 4px; max-width: 49%; object-fit: contain;' src='https://github.com/ZihanHu/blog/assets/133467869/72ac9df3-a735-4e47-938a-37ed012a50b7' />
-  <img style='padding: 4px; max-width: 49%; object-fit: contain;' src='https://github.com/ZihanHu/blog/assets/133467869/172cd1ee-70ec-4953-9ad8-1523fb2ad66a' />
+  <img style='padding: 4px; max-width: 49%; object-fit: contain;' src='https://blog-assets.typed-sigterm.me/images/84bcbe48a0ca1c1f864e766384abfce9.jpg' />
+  <img style='padding: 4px; max-width: 49%; object-fit: contain;' src='https://blog-assets.typed-sigterm.me/images/0f71cb128e6f0759cedb32afcff5e025.jpg' />
 </div>
+
+宿舍走廊：
+
+![](https://blog-assets.typed-sigterm.me/images/a68174e228ccd9d9efdcc677468b269c.jpg)
+
+教室走廊：
+
+![](https://blog-assets.typed-sigterm.me/images/bdd053bed64d9fc994821e49decb2728.jpg)
 
 ## 集训的结束
 
 最后一天，CD 班联考，结束了。
 
-![](https://github.com/ZihanHu/blog/assets/133467869/cc4fb29a-9b0b-4c02-a1f6-1a8ec4c51c89)
+![](https://blog-assets.typed-sigterm.me/images/20fe9f123490fc83c53960971f6b4917.jpg)
 
-<image-text-mix image='https://github.com/ZihanHu/blog/assets/133467869/0f9721ab-40e7-420f-a279-95145062036c'>
+<image-text-mix image='https://blog-assets.typed-sigterm.me/images/19d5a8ca1a457c96309b205688806808.jpg'>
   收拾东西，收拾心情。
 </image-text-mix>
 
 <div style='display: flex; align-items: center;'>
-  <img style='width: 30%;' src='https://github.com/ZihanHu/blog/assets/133467869/f5736a5c-7f5c-427e-8cb9-288ade641c10' title='from 新初三的室友' />
-  <img style='width: 30%;' src='https://github.com/ZihanHu/blog/assets/133467869/5890395e-33f0-4035-be11-95a79ea1c50b' title='from 新初三的室友' />
-  <img style='width: 30%;' src='https://github.com/ZihanHu/blog/assets/133467869/986ad626-8ce2-4d3c-9022-1b1e60928b18' title='from 新高二的室友' />
+  <img style='width: 30%;' src='https://blog-assets.typed-sigterm.me/images/11384ed265c2c6a8594341bfde6ad415.jpg' title='from 新初三的室友' />
+  <img style='width: 30%;' src='https://blog-assets.typed-sigterm.me/images/7c304a80464dea99f69d9aa7e92fd589.jpg' title='from 新初三的室友' />
+  <img style='width: 30%;' src='https://blog-assets.typed-sigterm.me/images/2c9e5d6de4fbb4d85c46f0db45239319.jpg' title='from 新高二的室友' />
 </div>
 
 还有新高一的室友留下的一些桃子和安慕希。
@@ -157,8 +165,10 @@ date: 2023-08-15
 
 *Goodbye, ZROI 2023 Summer Camp.*
 
-![](https://github.com/ZihanHu/blog/assets/133467869/1de6e4f9-ffbb-4402-9140-e71c6a6a62e9)
-![](https://github.com/ZihanHu/blog/assets/133467869/459225b5-7dcb-428c-a1cd-96363adc26eb)
+<div style='display: flex; flex-direction: row; width: 100%;'>
+  <img style='padding: 4px; max-width: 36%; object-fit: contain;' src='https://blog-assets.typed-sigterm.me/images/84d00b2e6021f27dc545967930b72a11.jpg' />
+  <img style='padding: 4px; max-width: 62%; object-fit: contain;' src='https://blog-assets.typed-sigterm.me/images/e8e21b76efcc1a7a7c4faa7cb2974ec3.jpg' />
+</div>
 
 <style scoped>
   img {

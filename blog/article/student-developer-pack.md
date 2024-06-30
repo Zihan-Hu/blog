@@ -10,7 +10,7 @@ tags:
 
 <!-- more -->
 
-![db102034f023a9b7f013c25b4a87c400](https://github.com/community/community/assets/145281501/2a5607c2-e207-4096-8eb3-86d805fce76c)
+![](https://blog-assets.typed-sigterm.me/images/db102034f023a9b7f013c25b4a87c400.png)
 
 ~~其实之前还尝试通过某宝解决问题，喜提 account suspended~~
 
@@ -57,6 +57,6 @@ GitHub 特别强调**材料上要有日期**（Dated），但我的学籍证明�
 
 申请通过后会发邮件过来，根据邮件指引访问 [GitHub Education](https://education.github.com/globalcampus/student)，跟着学两节课，通过了就可以在两天内拿到 Student Developer Pack 权益了。
 
-![ec466bd824a35d76a68a54444c978a22](https://github.com/community/community/assets/145281501/bb2e93b5-a303-4b44-be3e-129f79bee096)
+![](https://blog-assets.typed-sigterm.me/images/ec466bd824a35d76a68a54444c978a22.png)
 
 享用两年的免费 GitHub Copilot 和 GitHub Pro~
